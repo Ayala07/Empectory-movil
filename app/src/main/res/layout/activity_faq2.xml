@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".faq2Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/questionOne"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_item"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="¿Puedo encontrar los productos y servicois que ofrecen los emprendedores registrados?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/questionTwo"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_item"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="¿Donde estan exactamente los emprendedores registrados?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/questionThree"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_item"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="¿Tomarán toda la información de mi empresa para exponerla al publico?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/questionFour"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_item"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="¿Ahora que tengo esta aplicación debo volver a registrarme?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/questionFive"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_item"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="¿Cuántas empresas puedo registrar?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/questionSix"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_item"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="¿Qué puedo hacer con esta aplicación?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/respOne"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_resp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="No, los productos y servicios especificos no los puede encontrar"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/respTwo"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_resp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="Se encuentran en la sección de DIRECTORIO, puedes darle clic y te llevará a una lista de los emprendedores registrados"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/respTrhee"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_resp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="EMPECTORY solo tomará la información necesarioa paa que los usuarios puedan identificar su empresa, una foto representativa de esta, nombre de la empresa, una breve descripcion, etc."
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/respFour"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_resp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="No, esta aplicación esta disponible para los emprendedores que tienen la membrecía."
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/respFive"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_resp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="Eso dependerá de la membrecía que haya pagado."
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/respSix"
+                android:orientation="horizontal"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_resp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="Usando esta aplicación puedes administrar tu empresa desde tu celular, así como hacer publicaciones sobre lo nuevo de tu empresa."
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="135dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/edittext_button_style_rounded"
+                android:gravity="center"
+                android:text="Cerrar" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

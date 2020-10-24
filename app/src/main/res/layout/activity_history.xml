@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".historyActivity">
+
+    <LinearLayout
+        android:id="@+id/questionOneH"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="¿Qué es Empectory?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#4a4a4a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/questionTwoH"
+        android:orientation="horizontal"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="Sobre nosotros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#4a4a4a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/questionThreeH"
+        android:orientation="horizontal"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="¿Cómo surgió Empectory?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#4a4a4a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/questionFourH"
+        android:orientation="horizontal"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="Modelo de negocio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#4a4a4a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/respOneH"
+        android:orientation="horizontal"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_resp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="Es una aplicación móvil capaz de mostrar los emprendedores de Usulután y que el usuario pueda ver la información de esta"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#4a4a4a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/respTwoH"
+        android:orientation="horizontal"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_resp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="Empectory es un equipo iniciado en 2019 y se dedica a ofrecer un servicio de búsqueda sobre los emprededores de Usulután"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#4a4a4a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/respTrheeH"
+        android:orientation="horizontal"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_resp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="Empectory nació como un proyecto universitario conformando el equipo multifuncional, en función de crear facilidades para las personas emprendedoras de Usulután"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#4a4a4a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/respFourH"
+        android:orientation="horizontal"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_resp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="Negocios publicitarios. Nuestro proposito es ayudar a nuestros visitantes a ponerse en comunicación con algún emprendedor que ha llamado su interés"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#4a4a4a"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_closeH"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/edittext_button_style_rounded"
+        android:gravity="center"
+        android:text="Cerrar" />
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tonyayala.empectory">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="Notification_Channel.App"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode,InnerclassSeparator">
+
+        <activity android:name=".info_application" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PrincipalActivity"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:parentActivityName=".PrincipalActivity" />
+        <activity
+            android:name=".EditPostActivity"
+            android:label="@string/tittle_edit_post"
+            android:parentActivityName=".PrincipalActivity" />
+        <activity android:name=".EditProduct"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".NewsActivity"
+            android:label="@string/tittle_activity_news"
+            android:parentActivityName=".PrincipalActivity" />
+        <activity android:name=".ProductDetailActivity" />
+        <activity
+            android:name=".Market"
+            android:label="@string/tittle_activity_market"
+            android:parentActivityName=".PrincipalActivity" />
+        <activity
+            android:name=".faq2Activity"
+            android:label="@string/tittle_activity_FAQ"
+            android:parentActivityName=".help2Activity" />
+        <activity
+            android:name=".Feddback"
+            android:label="@string/tittle_activity_feedback"
+            android:parentActivityName=".help2Activity" />
+        <activity
+            android:name=".historyActivity"
+            android:label="@string/tittle_activity_SOBRE_NOSOTROS"
+            android:parentActivityName=".help2Activity" />
+        <activity
+            android:name=".help2Activity"
+            android:label="@string/tittle_activity_help"
+            android:parentActivityName=".PrincipalActivity" />
+
+        <activity
+            android:name=".ChatBotActivity"
+            android:label="@string/tittle_activity_chatbot"
+            android:parentActivityName=".help2Activity" />
+    </application>
+
+</manifest>

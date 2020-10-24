@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <include
+         layout="@layout/activity_post_detail"
+         />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_gravity="bottom|end"
+    android:orientation="vertical"
+    android:layout_marginRight="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:gravity="center_vertical">
+
+     <android.support.design.widget.FloatingActionButton
+         android:id="@+id/fab_market"
+         android:visibility="gone"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|end"
+         android:layout_marginEnd="11dp"
+         android:layout_marginRight="7dp"
+         android:layout_marginBottom="7dp"
+         android:src="@drawable/ic_shopping_cart_black_24dp"
+         android:tint="#FAF421"
+         app:fabSize="mini"
+         app:backgroundTint="#EE6600" />
+
+     <android.support.design.widget.FloatingActionButton
+         android:id="@+id/fab_edit"
+         android:visibility="gone"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|end"
+         android:layout_marginEnd="11dp"
+         android:layout_marginRight="4dp"
+         android:layout_marginBottom="7dp"
+         android:src="@drawable/ic_edit_black_24dp"
+         android:tint="#FAF421"
+         app:fabSize="mini"
+         app:backgroundTint="#EE6600" />
+
+     <android.support.design.widget.FloatingActionButton
+         android:id="@+id/fab_main"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:visibility="gone"
+         android:layout_marginStart="7dp"
+         android:layout_marginLeft="7dp"
+         android:layout_marginEnd="4dp"
+         android:layout_marginRight="4dp"
+         android:layout_marginBottom="7dp"
+         android:backgroundTint="#EE6600"
+         android:src="@drawable/ic_add_black_24dp"
+         android:tint="#FAF421"
+         app:fabSize="normal"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_market_without_propierty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="#EE6600"
+        android:src="@drawable/ic_shopping_cart_black_24dp"
+        android:tint="#FAF421"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

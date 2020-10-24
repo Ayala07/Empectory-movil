@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/directory"
+            android:title="Directorio" />
+
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Mi perfil"/>
+
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/ic_star_border_black_24dp"
+            android:title="Favoritos"/>
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_new_releases_black_24dp"
+            android:title="Noticias"/>
+
+
+
+
+    </group>
+
+    <item android:title="Configuracion">
+    <menu>
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_live_help_black_24dp"
+            android:title="Ayuda"/>
+
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Cerrar sesion" />
+
+        <item
+            android:id="@+id/nav_signin"
+            android:icon="@drawable/ic_input_black_24dp"
+            android:title="Iniciar sesion" />
+
+
+    </menu>
+    </item>
+
+
+
+
+</menu>

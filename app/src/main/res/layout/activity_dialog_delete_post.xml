@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/close_delete_TV"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="3dp"
+        android:layout_gravity="end"
+        android:background="@drawable/ic_close_black_24dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:textStyle="bold"
+        android:text="¡Alerta!"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#2e2e2e"/>
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/delete_TV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="Está a punto de eliminar su publicación. ¿Esta seguro que desea continuar?"
+            android:textSize="15dp" />
+
+    </ScrollView>
+</LinearLayout>

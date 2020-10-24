@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Empectory</string>
+    <string name="title_activity_principal">Últimos emprendedores</string>
+    <string name="tittle_activity_help">Ayuda</string>
+    <string name="tittle_activity_chatbot">Chat Bot</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Empectory</string>
+    <string name="nav_header_subtitle">empectory@gmail.com</string>
+    <string name="nav_header_subtitle_plan">Plan</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="google_android_map_api_key">Map API key</string>
+
+    <string name="tittle_activity_FAQ">FAQ</string>
+    <string name="tittle_activity_SOBRE_NOSOTROS">Sobre Nosotros</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tittle_edit_profile_activity">Editar perfil</string>
+    <string name="tittle_edit_post">Editar publicación</string>
+    <string name="tittle_activity_news">Noticias</string>
+    <string name="tittle_activity_feedback">Reportar error</string>
+    <string name="tittle_activity_market">Tienda</string>
+
+
+</resources>

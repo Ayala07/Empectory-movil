@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/popup_facebook_info"
+          android:layout_width="42dp"
+          android:layout_height="0dp"
+          android:background="#ffffff"
+          android:scaleType="centerCrop"
+          android:src="@drawable/ic_error_outline_black_24dp"
+          app:layout_constraintBottom_toTopOf="@+id/popup_post_img"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/popup_facebook"
+          app:layout_constraintTop_toBottomOf="@+id/popup_post_phone" />
+
+      <EditText
+          android:id="@+id/popup_post_tittle"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/popup_edittext_style"
+          android:ems="10"
+          android:hint="Titulo"
+          android:inputType="textPersonName"
+          app:layout_constraintEnd_toStartOf="@+id/popup_user"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+          android:id="@+id/popup_post_add"
+          android:layout_width="56dp"
+          android:layout_height="56dp"
+          android:layout_marginStart="8dp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="8dp"
+          android:layout_marginRight="8dp"
+          android:background="@drawable/circle_bg"
+          android:padding="12dp"
+          app:layout_constraintBottom_toBottomOf="@+id/popup_post_img"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.498"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/popup_post_img"
+          app:srcCompat="@drawable/ic_save_black_24dp"
+          tools:ignore="VectorDrawableCompat" />
+
+      <ProgressBar
+          android:id="@+id/popup_post_progressBar"
+          style="?android:attr/progressBarStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/circle_bg"
+          android:padding="4dp"
+          android:visibility="invisible"
+          app:layout_constraintBottom_toBottomOf="@+id/popup_post_add"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.498"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/popup_post_add"
+          app:layout_constraintVertical_bias="1.0" />
+
+      <ImageView
+          android:id="@+id/popup_post_img"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/popup_set_img_background"
+          android:scaleType="fitCenter"
+          android:src="@drawable/addphoto"
+          app:layout_constraintBottom_toTopOf="@+id/popup_post_add"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/popup_facebook" />
+
+      <EditText
+          android:id="@+id/popup_facebook"
+          android:layout_width="0dp"
+          android:layout_height="82dp"
+          android:background="@drawable/popup_edittext_style"
+          android:ems="10"
+          android:hint="Enlace al perfil de Facebook"
+          app:layout_constraintBottom_toTopOf="@+id/popup_post_img"
+          app:layout_constraintEnd_toStartOf="@+id/popup_facebook_info"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/popup_post_phone" />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/popup_user"
+          android:visibility="visible"
+          android:layout_width="42dp"
+          android:layout_height="0dp"
+          android:background="#ffffff"
+          android:scaleType="centerCrop"
+          android:src="@android:drawable/sym_def_app_icon"
+          app:layout_constraintBottom_toTopOf="@+id/popup_post_price"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/popup_post_tittle"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <EditText
+          android:id="@+id/popup_post_name"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/popup_edittext_style"
+          android:ems="10"
+          android:hint="Direccion"
+          android:inputType="textPersonName"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/popup_post_description" />
+
+      <com.santalu.maskedittext.MaskEditText
+          android:id="@+id/popup_post_phone"
+          android:layout_width="0dp"
+          android:layout_height="49dp"
+          android:background="@drawable/popup_edittext_style"
+          android:ems="10"
+          android:hint="Numero de telefono"
+          android:inputType="phone"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/popup_post_name"
+          app:met_mask="+503 ########" />
+
+      <View
+          android:id="@+id/view3"
+          android:layout_width="0dp"
+          android:layout_height="1dp"
+          android:background="#000"
+          app:layout_constraintBottom_toTopOf="@+id/popup_post_img"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/popup_post_img" />
+
+      <EditText
+          android:id="@+id/popup_post_description"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/popup_edittext_style"
+          android:ems="10"
+          android:enabled="false"
+          android:hint="Email"
+          android:inputType="textPersonName"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/popup_post_price" />
+
+      <EditText
+          android:id="@+id/popup_post_price"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/popup_edittext_style"
+          android:ems="10"
+          android:hint="Descripcion"
+          android:inputType="textPersonName"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/popup_post_tittle" />
+    </android.support.constraint.ConstraintLayout>
+  </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

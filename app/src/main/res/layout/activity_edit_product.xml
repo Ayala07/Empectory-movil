@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProduct"
+    android:background="#FFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_product_edit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@null"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/btn_product_edit_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        android:tint="#000"
+                        app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/edit_product_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintBottom_toTopOf="@+id/title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edtTittle_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Titulo"
+                android:background="@drawable/edittext_button_style_rounded"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_product_image" />
+
+            <EditText
+                android:id="@+id/edtPrice_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edittext_button_style_rounded"
+                android:ems="10"
+                android:hint="Precio"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="@+id/edtTittle_product"
+                app:layout_constraintStart_toStartOf="@+id/edtTittle_product"
+                app:layout_constraintTop_toBottomOf="@+id/edtTittle_product" />
+
+            <EditText
+                android:id="@+id/edtExists_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edittext_button_style_rounded"
+                android:ems="10"
+                android:hint="Existencias"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="@+id/edtPrice_product"
+                app:layout_constraintStart_toStartOf="@+id/edtPrice_product"
+                app:layout_constraintTop_toBottomOf="@+id/edtPrice_product" />
+
+            <EditText
+                android:id="@+id/edtDescription_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edittext_button_style_rounded"
+                android:ems="10"
+                android:hint="Descripcion"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/edtExists_product"
+                app:layout_constraintStart_toStartOf="@+id/edtExists_product"
+                app:layout_constraintTop_toBottomOf="@+id/edtExists_product" />
+
+            <Button
+                android:id="@+id/btnUpdateProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/edittext_button_style_rounded"
+                android:text="Actualizar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/edtDescription_product"
+                app:layout_constraintStart_toStartOf="@+id/edtDescription_product"
+                app:layout_constraintTop_toBottomOf="@+id/edtDescription_product" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
